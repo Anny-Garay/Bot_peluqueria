@@ -5,7 +5,7 @@ const fs = require('fs');
 const port = 3000;
 
 app.use(express.json()); //Esto es para procesar Json
-app.use(express.static('public')); //Esto es para servir los archivos html, css, js que este en la carpeta public
+app.use(express.static('public')); //Esto es para servir los archivos html, css.
 app.use(cors());
 
 //Ruta de bienvenida
@@ -13,20 +13,20 @@ app.get('/', (req, res) => {
     res.send('¡Bienvenida al bot_peluqueria! 💇‍♀️✨');
 });
 
-//Obtener todos los usuarios
-app.get('/usuarios', (req, res) => {
+//Obtener todos los clientes
+app.get('/clientes', (req, res) => {
     const data = JSON.parse(fs.readFileSync('db.json'));
-    res.json(data.usuarios);
+    res.json(data.clientes);
 });
 
-//Crear un nuevo usuario
-app.post('/usuarios', (req, res) => {
+//Crear un nuevo cliente
+app.post('/clientes', (req, res) => {
     const data = JSON.parse(fs.readFileSync('db.json'));
-    const nuevosUsuarios = data.usuarios;
-    const nuevoUsuario = { id: Date.now(), ...req.body };
-    nuevosClientes.push(nuevoUsuario);
-    fs.writeFileSync('db.json', JSON.stringify({ usuarios: nuevosUsuarios }, null, 2));
-    res.send('Usuario agregado');
+    const nuevosClientes = data.clientes;
+    const nuevoCliente = { id: Date.now(), ...req.body };
+    nuevosClientes.push(nuevoCliente);
+    fs.writeFileSync('db.json', JSON.stringify({ clientes: nuevosClientes }, null, 2));
+    res.send('Cliente agregado');
 });
 
 //Actualizar un cliente por ID

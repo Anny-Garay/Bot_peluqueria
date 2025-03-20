@@ -27,7 +27,26 @@
             </tbody>
         </table>
     </div>
-
+    <div id="modal-editar" class="modal">
+        <div class="modal-content">
+          <span class="cerrar">&times;</span> <!--Esto es para cerrar el modal-->
+          <h2>Editar Cliente</h2>
+          <form id="form-editar">
+            <input type="hidden" id="editar-id">
+            <label>Nombre:</label>
+            <input type="text" id="editar-nombre" required>
+            <label>Apellido:</label>
+            <input type="text" id="editar-apellido" required>
+            <label>Celular:</label>
+            <input type="text" id="editar-celular" required>
+            <label>DNI:</label>
+            <input type="text" id="editar-dni" required>
+            <label>Email:</label>
+            <input type="email" id="editar-email" required>
+            <button type="submit" class="btn guardar">Guardar cambios</button>
+          </form>
+        </div>
+    </div>
     <script src="clientes.js"></script>
 </body>
 </html>
