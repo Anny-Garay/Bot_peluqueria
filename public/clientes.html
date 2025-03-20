@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes Registrados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tabla">
+        <a href="registro.html" class="btn agregar">Nuevo cliente</a>
+        <h1>Clientes Registrados</h1>
+        <table>
+            <thead>
+                <tr class="cabecera">
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Celular</th>
+                    <th>Dni</th>
+                    <th>Email</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-clientes">
+                <!-- Los clientes se cargarán aquí dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="clientes.js"></script>
+</body>
+</html>

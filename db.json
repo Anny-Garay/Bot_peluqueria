@@ -1,0 +1,44 @@
+{
+  "clientes": [
+    {
+      "id": 1742443343713,
+      "nombre": "Michina",
+      "apellido": "Garay",
+      "celular": "954785123",
+      "dni": "75842158",
+      "email": "michina@gmail.com"
+    },
+    {
+      "id": 1742446067646,
+      "nombre": "Francesco",
+      "apellido": "Rossi",
+      "celular": "987654321",
+      "dni": "12345678",
+      "email": "francesco@gmail.com"
+    },
+    {
+      "id": 1742446724048,
+      "nombre": "Alberto",
+      "apellido": "Scorfano",
+      "celular": "345347589",
+      "dni": "68521058",
+      "email": "Albertoscorfano@gmail.com"
+    },
+    {
+      "nombre": "Haru",
+      "apellido": "Garay",
+      "celular": "945874512",
+      "dni": "85125478",
+      "email": "haru@gmail.com",
+      "id": 1742447249019
+    },
+    {
+      "nombre": "Raquel",
+      "apellido": "Garay",
+      "celular": "927147747",
+      "dni": "73555247",
+      "email": "raquel@gmail.com",
+      "id": 1742447249020
+    }
+  ]
+}
